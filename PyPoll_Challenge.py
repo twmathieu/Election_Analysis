@@ -1,3 +1,6 @@
+# -*- coding: UTF-8 -*-
+#"""PyPoll Homework Challenge Solution."""
+
 # Add our dependencies.
 import csv
 import os
@@ -80,9 +83,8 @@ with open(file_to_load) as election_data:
 with open(file_to_save, "w") as txt_file:
     # Print the final vote count (to terminal)
     election_results = (
-        f"\nElection Results\n"
-        f"Total Votes: {total_votes:,}\n"
-        f"County Votes:\n")
+        f"\nElection Results\nTotal Votes: {total_votes:,}\nCounty Votes:\n")
+        
     print(election_results, end="")
     txt_file.write(election_results)
     # 6a: Write a for loop to get the county from the county dictionary.
